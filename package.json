@@ -1,0 +1,59 @@
+{
+  "name": "pefile",
+  "version": "0.0.1",
+  "description": "JavaScript port of Python's pefile module",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "repository": {
+    "url": "https://github.com/zakuciael/node-pefile.git",
+    "type": "git"
+  },
+  "author": "Krzysztof Saczuk <zakku@zakku.eu>",
+  "license": "MIT",
+  "keywords": [
+    "pe",
+    "exe",
+    "dll",
+    "pefile",
+    "pecoff"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "husky": "husky install",
+    "lint": "xo --fix",
+    "build": "swc src/ -d dist/"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.218",
+    "@types/node": "14.18.22",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "eslint-config-xo": "^0.41.0",
+    "eslint-config-xo-typescript": "^0.52.0",
+    "eslint-formatter-mo": "^1.1.1",
+    "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "xo": "^0.51.0"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}

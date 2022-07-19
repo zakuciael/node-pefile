@@ -1,0 +1,9 @@
+{
+  "**/*.{ts,js}x?": [
+    "prettier --write",
+    "xo --fix"
+  ],
+  "**/*.json": [
+    "prettier --write"
+  ]
+}
